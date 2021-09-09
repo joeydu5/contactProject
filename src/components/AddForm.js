@@ -91,10 +91,8 @@ const AddForm = () => {
       <form>
         <h1>Add a new contact</h1>
         <h2>{sameValue ? "!!! User already exists !!!" : ""}</h2>
-
         <hr />
         <h3>Personal Info</h3>
-
         <div>
           {/* <label htmlFor="name">Name:</label> */}
           <input
@@ -130,10 +128,8 @@ const AddForm = () => {
             onChange={valuesHandler}
           />
         </div>
-
         <hr />
         <h3>Home Address</h3>
-
         <div className="address">
           {/* <h4>Your Address:</h4> */}
           {/* <label htmlFor="street">Street:</label> */}
@@ -179,10 +175,8 @@ const AddForm = () => {
             onChange={addressHandler}
           />
         </div>
-
         <hr />
         <h3>Company Info</h3>
-
         <div>
           {/* <label htmlFor="zipcode">Zipcode:</label> */}
           <input
@@ -205,7 +199,6 @@ const AddForm = () => {
             onChange={companyHandler}
           />
         </div>
-
         <button type="submit" onClick={formSubmitHandler}>
           Add New
         </button>
