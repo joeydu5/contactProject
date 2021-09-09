@@ -1,0 +1,40 @@
+.home {
+  display: flex;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.addnew a {
+  text-decoration: none;
+  color: black;
+}
+
+.addnew {
+  background-color: lightgrey;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  line-height: 45px;
+  /* box-shadow: 2px 5px grey; */
+}
+
+.addnew a :visited {
+  color: black;
+}
+
+.addnew:hover {
+  background-color: darkgrey;
+  cursor: pointer;
+}
+
+.home-main {
+  width: 300px;
+  margin-left: 100px;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+}
