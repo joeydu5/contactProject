@@ -1,0 +1,58 @@
+.detail {
+  width: 500px;
+  /* height: 600px; */
+  background-color: whitesmoke;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.detail-map {
+  width: 95%;
+  height: 250px;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: yellowgreen;
+}
+
+.detail-text,
+.detail-text-sub {
+  background-color: darkgrey;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-left: 30px;
+  height: 40px;
+  margin: 10px auto;
+}
+
+.detail-text span {
+  font-size: 22px;
+  font-weight: 600;
+  vertical-align: middle;
+  display: inline-block;
+  margin: -10px 0px 0px 25px;
+}
+
+.detail-text-sub span {
+  font-size: 18px;
+  font-weight: 400;
+  vertical-align: middle;
+  display: inline-block;
+  margin: -10px 0px 12px 25px;
+}
+
+.detail-text i {
+  vertical-align: bottom;
+}
+.detail-text:hover,
+.detail-text-sub:hover {
+  background-color: gray;
+}
+
+.detail-body {
+  margin-top: 25px;
+}
+
+.material-icons {
+  font-size: 30px;
+}

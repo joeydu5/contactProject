@@ -76,8 +76,6 @@ const AddForm = () => {
         phone: "",
         email: "",
         website: "",
-        company: { companyName: "", website: "" },
-        address: { street: "", suite: "", city: "", zipcode: "" },
       });
       // setcompanyInput({ companyName: "", website: "" });
       // setaddressInput({ street: "", suite: "", city: "", zipcode: "" });

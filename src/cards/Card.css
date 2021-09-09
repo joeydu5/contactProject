@@ -1,7 +1,48 @@
 .card {
-  background-color: cadetblue;
-  height: 40px;
-  line-height: 40px;
+  /* background-color: cadetblue; */
+  height: 60px;
+  line-height: 60px;
   /* margin: 2px 0px; */
   padding: 0px 20px;
+  display: flex;
+  width: 320px;
+  align-items: center;
+  box-shadow: 0;
+}
+
+.left_card {
+  /* border: 1px solid gray; */
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  background-color: gold;
+  line-height: 40px;
+}
+
+.card .left_card {
+  color: black;
+}
+
+.right_card {
+  margin-left: 15px;
+  cursor: pointer;
+}
+.purple {
+  background-color: #5745d3;
+  color: white;
+}
+
+.green {
+  background-color: #66d073;
+}
+
+.white {
+  background-color: #fdfdfd;
+}
+
+.card:hover {
+  box-shadow: -10px -10px 15px -1px grey;
 }

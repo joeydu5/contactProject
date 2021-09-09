@@ -1,8 +1,47 @@
 .addForm {
   width: 300px;
-  height: 500px;
-  background-color: bisque;
+  /* height: 600px; */
+  background-color: whitesmoke;
   border-radius: 10px;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.addForm h1 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #5745d3;
+}
+
+.addForm h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: red;
+}
+
+.addForm h3 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: -170px;
+  margin-top: -2px;
+}
+
+.addForm input {
+  display: block;
+  height: 38px;
+  width: 230px;
+  border-radius: 5px;
+  border: 1px solid #5745d3;
+  margin: 15px auto;
+}
+
+.addForm button {
+  border: none;
+  padding: 13px;
+  border-radius: 5px;
+  background-color: #5745d3;
+  color: white;
+  font-size: 16px;
+  box-shadow: 8px 8px 10px -2px grey;
 }

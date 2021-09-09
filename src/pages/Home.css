@@ -7,12 +7,12 @@ p {
   padding: 0;
 }
 
-.addnew a {
+.add-btn a {
   text-decoration: none;
   color: black;
 }
 
-.addnew {
+.add-btn {
   background-color: lightgrey;
   border-radius: 50%;
   height: 45px;
@@ -22,19 +22,24 @@ p {
   /* box-shadow: 2px 5px grey; */
 }
 
-.addnew a :visited {
+.add-btn a :visited {
   color: black;
 }
 
-.addnew:hover {
+.add-btn:hover {
   background-color: darkgrey;
   cursor: pointer;
 }
 
 .home-main {
-  width: 300px;
+  /* width: 300px; */
   margin-left: 100px;
   background-color: whitesmoke;
   padding: 20px;
   border-radius: 10px;
+}
+
+.add-form {
+  text-align: center;
+  width: 400px;
 }
