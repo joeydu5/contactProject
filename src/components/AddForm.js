@@ -1,24 +1,13 @@
 import React from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { motion } from "framer-motion";
 import "./AddForm.css";
 
-const AddForm = () => {
+const AddForm = (props) => {
   const storeValue = useSelector((state) => state.values);
   const dispatch = useDispatch();
   const [sameValue, setsameValue] = useState(false);
-
-  // const [addressInput, setaddressInput] = useState({
-  //   street: "",
-  //   suite: "",
-  //   city: "",
-  //   zipcode: "",
-  // });
-
-  // const [companyInput, setcompanyInput] = useState({
-  //   companyName: "",
-  //   website: "",
-  // });
 
   const [values, setValues] = useState({
     id: Date.now(),
@@ -67,6 +56,8 @@ const AddForm = () => {
     if (storeValue.find((eachValue) => eachValue.phone === values.phone)) {
       setsameValue(true);
       return;
+    } else {
+      props.setaddBtn(false);
     }
     if (values.phone !== "" && values.name !== "") {
       // dispatch action to add the form info to the redux store.
@@ -86,11 +77,40 @@ const AddForm = () => {
 
   //   console.log(storeValue);
 
+  const motionVariants = {
+    initial: { x: "100vw", opacity: 0 },
+    animate: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 0.5, type: "spring", stiffness: 80 },
+    },
+    exit: {
+      x: "100vw",
+      transition: { duration: 0.5, type: "spring", stiffness: 80 },
+    },
+  };
+
   return (
-    <div className="addForm">
+    <motion.div
+      className="addForm"
+      variants={motionVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+    >
       <form>
-        <h1>Add a new contact</h1>
-        <h2>{sameValue ? "!!! User already exists !!!" : ""}</h2>
+        <div className="form-header form-header-flex">
+          <motion.h4
+            className="material-icons cancel-icon"
+            onClick={props.closeAddFormBtnHandler}
+            whileHover={{ scale: 1.3, rotate: 360 }}
+            transition={{ duration: 0.8 }}
+          >
+            cancel
+          </motion.h4>
+          <h1>Add a new contact</h1>
+        </div>
+        <h2>{sameValue ? "!!! This phone number exists!!!" : ""}</h2>
         <hr />
         <h3>Personal Info</h3>
         <div>
@@ -101,7 +121,7 @@ const AddForm = () => {
             name="name"
             value={values.name}
             onChange={valuesHandler}
-            placeholder="Name:"
+            placeholder="  Name:"
             required
           />
         </div>
@@ -113,7 +133,7 @@ const AddForm = () => {
             id="phone"
             name="phone"
             value={values.phone}
-            placeholder="Phone:"
+            placeholder="  Phone:"
             onChange={valuesHandler}
           />
         </div>
@@ -124,7 +144,7 @@ const AddForm = () => {
             id="email"
             name="email"
             value={values.email}
-            placeholder="Email:"
+            placeholder="  Email:"
             onChange={valuesHandler}
           />
         </div>
@@ -138,7 +158,7 @@ const AddForm = () => {
             id="street"
             name="street"
             value={values.address.street}
-            placeholder="Street Name"
+            placeholder="  Street Name"
             onChange={addressHandler}
           />
         </div>
@@ -149,7 +169,7 @@ const AddForm = () => {
             id="suite"
             name="suite"
             value={values.address.suite}
-            placeholder="Suite Number"
+            placeholder="  Suite Number"
             onChange={addressHandler}
           />
         </div>
@@ -160,7 +180,7 @@ const AddForm = () => {
             id="city"
             name="city"
             value={values.address.city}
-            placeholder="City"
+            placeholder="  City"
             onChange={addressHandler}
           />
         </div>
@@ -171,7 +191,7 @@ const AddForm = () => {
             id="zipcode"
             name="zipcode"
             value={values.address.zipcode}
-            placeholder="Zipcode"
+            placeholder="  Zipcode"
             onChange={addressHandler}
           />
         </div>
@@ -184,7 +204,7 @@ const AddForm = () => {
             id="companyName"
             name="companyName"
             value={values.company.companyName}
-            placeholder="Company Name:"
+            placeholder="  Company Name:"
             onChange={companyHandler}
           />
         </div>
@@ -195,7 +215,7 @@ const AddForm = () => {
             id="website"
             name="website"
             value={values.company.website}
-            placeholder="Website:"
+            placeholder="  Website:"
             onChange={companyHandler}
           />
         </div>
@@ -203,7 +223,7 @@ const AddForm = () => {
           Add New
         </button>
       </form>
-    </div>
+    </motion.div>
   );
 };
 

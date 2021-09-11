@@ -1,8 +1,9 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./Card.css";
 
 const Card = (props) => {
-  // console.log(props.theme);
+  //define a function to get the initials of a name
   const toAbbr = (str) => {
     return (
       str &&
@@ -12,15 +13,32 @@ const Card = (props) => {
         .toUpperCase()
     );
   };
+  // const ascendingOrder = (arr) => {
+  //   return arr.sort(function (a, b) {
+  //     return a - b;
+  //   });
+  // };
   const initialLetter = toAbbr(props.item.name);
+  const namelist = props.item.name.toUpperCase();
+  // console.log(namelist);
 
   return (
-    <div className={`card ${props.theme}`}>
-      <div className="left_card">{initialLetter}</div>
+    <motion.div
+      className={`card ${props.theme}`}
+      onClick={() => props.cardClickHandler(props.item)}
+      whileHover={{ scale: 1.2 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
+      <div className={`left-card ${props.initialColor}`}>{initialLetter}</div>
       <div className="right_card">
-        <p>{props.item.name}</p>
+        <motion.p
+          whileHover={{ scale: 1.4, originX: 0 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          {namelist}
+        </motion.p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

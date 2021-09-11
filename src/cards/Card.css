@@ -1,28 +1,45 @@
 .card {
   /* background-color: cadetblue; */
   height: 60px;
-  line-height: 60px;
+  line-height: 55px;
   /* margin: 2px 0px; */
   padding: 0px 20px;
   display: flex;
   width: 320px;
   align-items: center;
   box-shadow: 0;
+  font-size: 15px;
 }
 
-.left_card {
+.left-card {
   /* border: 1px solid gray; */
-  font-family: "Roboto", sans-serif;
+  font-family: "PT Sans Narrow", "Roboto", sans-serif;
   font-weight: 400;
+  font-size: 18px;
   border-radius: 50%;
   height: 40px;
   width: 40px;
   text-align: center;
-  background-color: gold;
-  line-height: 40px;
+  line-height: 42px;
 }
 
-.card .left_card {
+.initialColor1 {
+  background-color: #fffe2f;
+  color: #5745d3;
+}
+
+.initialColor2 {
+  background-color: #9be38d;
+  color: #343ea4;
+}
+
+.initialColor3 {
+  background-color: #fffe2f;
+  color: #5745d3;
+}
+
+.initialColor4 {
+  background-color: white;
   color: black;
 }
 
@@ -30,19 +47,71 @@
   margin-left: 15px;
   cursor: pointer;
 }
-.purple {
+
+.card:hover {
+  box-shadow: -7px -7px 10px -1px grey;
+}
+
+/* Theme 1 colors */
+.theme1-1 {
   background-color: #5745d3;
   color: white;
 }
 
-.green {
+.theme1-2 {
   background-color: #66d073;
+  color: #5745d3;
 }
 
-.white {
+.theme1-3 {
   background-color: #fdfdfd;
+  color: #5745d3;
 }
 
-.card:hover {
-  box-shadow: -10px -10px 15px -1px grey;
+/* Theme 2 colors */
+.theme2-1 {
+  background-color: #343ea4;
+  color: #fbf1e8;
+}
+
+.theme2-2 {
+  background-color: #c74d54;
+  color: #fbf1e8;
+}
+
+.theme2-3 {
+  background-color: #fbf1e8;
+  color: #343ea4;
+}
+
+/* Theme 3 colors */
+.theme3-1 {
+  background-color: #1f2d47;
+  color: #ffffff;
+}
+
+.theme3-2 {
+  background-color: #6ecc80;
+  color: #ffffff;
+}
+
+.theme3-3 {
+  background-color: #ffffff;
+  color: #1f2d47;
+}
+
+/* Theme 4 colors */
+.theme4-1 {
+  background-color: #a9a9a9;
+  color: black;
+}
+
+.theme4-2 {
+  background-color: #c0c0c0;
+  color: black;
+}
+
+.theme4-3 {
+  background-color: #d3d3d3;
+  color: black;
 }

@@ -1,45 +1,92 @@
 .home {
   display: flex;
+  align-items: flex-start;
+  width: 1300px;
+  min-height: 850px;
+  margin: 0 auto;
 }
 
-p {
-  margin: 0;
-  padding: 0;
+.home-left {
+  width: 10%;
+  margin-top: 100px;
 }
 
-.add-btn a {
-  text-decoration: none;
-  color: black;
+.home-middle {
+  width: 50%;
+  /* background-color: violet; */
 }
 
-.add-btn {
-  background-color: lightgrey;
-  border-radius: 50%;
-  height: 45px;
-  width: 45px;
-  text-align: center;
-  line-height: 45px;
-  /* box-shadow: 2px 5px grey; */
+.empty-space {
+  position: absolute;
+  /* background-color: yellow; */
+  z-index: -10;
+  /* margin-left: -10px; */
+}
+.empty-space h1 {
+  margin-top: 150px;
+  color: rgb(255, 255, 255, 0.6);
+  font-size: 95px;
+  font-weight: 300;
+  text-shadow: 2px 2px 5px rgb(255, 255, 255, 0.5);
 }
 
-.add-btn a :visited {
-  color: black;
-}
-
-.add-btn:hover {
-  background-color: darkgrey;
+.contact-theme div {
   cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid white;
+  overflow: hidden;
+  margin-bottom: 35px;
 }
 
-.home-main {
-  /* width: 300px; */
-  margin-left: 100px;
-  background-color: whitesmoke;
-  padding: 20px;
-  border-radius: 10px;
+.contact-theme span {
+  display: block;
+  height: 33.3%;
+  width: 100%;
+  background-color: darkgreen;
 }
 
-.add-form {
-  text-align: center;
-  width: 400px;
+/* theme 1 */
+.contact-theme-1 :nth-child(1) {
+  background-color: #5745d3;
+}
+.contact-theme-1 :nth-child(2) {
+  background-color: #66d073;
+}
+.contact-theme-1 :nth-child(3) {
+  background-color: #fdfdfd;
+}
+
+/* theme 2 */
+.contact-theme-2 :nth-child(1) {
+  background-color: #343ea4;
+}
+.contact-theme-2 :nth-child(2) {
+  background-color: #c74d54;
+}
+.contact-theme-2 :nth-child(3) {
+  background-color: #fbf1e8;
+}
+
+/* theme 3 */
+.contact-theme-3 :nth-child(1) {
+  background-color: #1f2d47;
+}
+.contact-theme-3 :nth-child(2) {
+  background-color: #6ecc80;
+}
+.contact-theme-3 :nth-child(3) {
+  background-color: #ffffff;
+}
+
+/* theme4 */
+.contact-theme-4 :nth-child(1) {
+  background-color: #a9a9a9;
+}
+.contact-theme-4 :nth-child(2) {
+  background-color: #c0c0c0;
+}
+.contact-theme-4 :nth-child(3) {
+  background-color: #d3d3d3;
 }

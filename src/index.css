@@ -1,5 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", "Roboto", sans-serif;
+  font-family: "Poppins", "Montserrat", "Roboto", sans-serif;
+  background-color: #1c2b4f;
+  /* background-color: whitesmoke; */
 }
