@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "../cards/Card";
 import { motion } from "framer-motion";
-
 import "./Contact.css";
 
 const Contact = ({
@@ -30,7 +29,6 @@ const Contact = ({
     setaddBtn(false);
     setdetailData(currentContact);
   };
-  // console.log(detailData);
   function add_btn_handler() {
     setaddBtn(true);
     setToggleDetailPage(false);

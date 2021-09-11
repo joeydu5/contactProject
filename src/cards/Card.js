@@ -13,14 +13,9 @@ const Card = (props) => {
         .toUpperCase()
     );
   };
-  // const ascendingOrder = (arr) => {
-  //   return arr.sort(function (a, b) {
-  //     return a - b;
-  //   });
-  // };
+
   const initialLetter = toAbbr(props.item.name);
   const namelist = props.item.name.toUpperCase();
-  // console.log(namelist);
 
   return (
     <motion.div

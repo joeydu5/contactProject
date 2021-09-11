@@ -96,7 +96,7 @@ const AddForm = (props) => {
       variants={motionVariants}
       initial="initial"
       animate="animate"
-      exit="exit"
+      // exit="exit"
     >
       <form>
         <div className="form-header form-header-flex">
@@ -114,7 +114,6 @@ const AddForm = (props) => {
         <hr />
         <h3>Personal Info</h3>
         <div>
-          {/* <label htmlFor="name">Name:</label> */}
           <input
             type="text"
             id="name"
@@ -127,7 +126,6 @@ const AddForm = (props) => {
         </div>
 
         <div>
-          {/* <label htmlFor="email">Email:</label> */}
           <input
             type="text"
             id="phone"
@@ -138,7 +136,6 @@ const AddForm = (props) => {
           />
         </div>
         <div>
-          {/* <label htmlFor="email">Email:</label> */}
           <input
             type="email"
             id="email"
@@ -151,8 +148,6 @@ const AddForm = (props) => {
         <hr />
         <h3>Home Address</h3>
         <div className="address">
-          {/* <h4>Your Address:</h4> */}
-          {/* <label htmlFor="street">Street:</label> */}
           <input
             type="text"
             id="street"
@@ -163,7 +158,6 @@ const AddForm = (props) => {
           />
         </div>
         <div>
-          {/* <label htmlFor="suite">Suite:</label> */}
           <input
             type="text"
             id="suite"
@@ -174,7 +168,6 @@ const AddForm = (props) => {
           />
         </div>
         <div>
-          {/* <label htmlFor="city">City:</label> */}
           <input
             type="text"
             id="city"
@@ -185,7 +178,6 @@ const AddForm = (props) => {
           />
         </div>
         <div>
-          {/* <label htmlFor="zipcode">Zipcode:</label> */}
           <input
             type="text"
             id="zipcode"
@@ -198,7 +190,6 @@ const AddForm = (props) => {
         <hr />
         <h3>Company Info</h3>
         <div>
-          {/* <label htmlFor="zipcode">Zipcode:</label> */}
           <input
             type="text"
             id="companyName"
@@ -209,7 +200,6 @@ const AddForm = (props) => {
           />
         </div>
         <div>
-          {/* <label htmlFor="zipcode">Zipcode:</label> */}
           <input
             type="text"
             id="website"

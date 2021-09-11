@@ -23,9 +23,7 @@ const rootReducer = (state = initState, action) => {
   if (action.type === "ADD_CONTACT") {
     return { ...state, values: [...state.values, action.values] }; // values is object here
   }
-  if (action.type === "ADD_CONTACT2") {
-    return { ...state, values: [...state.values, ...action.values] };
-  }
+
   if (action.type === SET_USER) {
     const { user } = action;
     return { ...state, values: user };
@@ -38,8 +36,6 @@ const rootReducer = (state = initState, action) => {
 //for redux store
 //create saga middleware
 const sagaMiddleware = createSagaMiddleware();
-
-// create middleware=[sagaMiddleware]; if there is more than one middleware
 
 // connect saga with store.
 const store = createStore(rootReducer, {}, applyMiddleware(sagaMiddleware));

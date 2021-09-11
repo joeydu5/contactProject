@@ -1,6 +1,5 @@
 .addForm {
   width: 400px;
-  /* height: 600px; */
   background-color: whitesmoke;
   border-radius: 10px;
   text-align: center;
@@ -49,8 +48,6 @@
 }
 
 input::placeholder {
-  /* color: #777; */
-  /* color: #a69de3; */
   color: #5745d3;
   opacity: 60%;
 }
@@ -67,4 +64,15 @@ input::placeholder {
   font-size: 35px;
   color: #5745d3;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .addForm {
+    width: 100%;
+    padding: 15px 0px 15px 0px;
+  }
+
+  .addForm input {
+    width: 70%;
+  }
 }

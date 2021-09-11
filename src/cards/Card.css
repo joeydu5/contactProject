@@ -1,18 +1,15 @@
 .card {
-  /* background-color: cadetblue; */
+  width: 320px;
   height: 60px;
   line-height: 55px;
-  /* margin: 2px 0px; */
   padding: 0px 20px;
   display: flex;
-  width: 320px;
   align-items: center;
   box-shadow: 0;
   font-size: 15px;
 }
 
 .left-card {
-  /* border: 1px solid gray; */
   font-family: "PT Sans Narrow", "Roboto", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -114,4 +111,18 @@
 .theme4-3 {
   background-color: #d3d3d3;
   color: black;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 83%;
+    height: 60px;
+    line-height: 55px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0;
+    font-size: 15px;
+    margin: 0 auto;
+  }
 }
