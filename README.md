@@ -11,3 +11,4 @@
 5. There are four themes available to choose, click each button will trigger this theme and disable previous theme.
 
 6. Due to the limit time, the Contacts functions such as Delete contacts, Faviorite list, displaying the location with Google Geocoding API haven't been accomplished.
+7. hosting address: https://main.dpq5cq2clm9f1.amplifyapp.com/
